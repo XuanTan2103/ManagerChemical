@@ -1,0 +1,124 @@
+/* Users.module.css */
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f5f6fa;
+  }
+  
+  /* Main Container (Sidebar + Content) */
+  .mainContainer {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  /* Main Content */
+  .mainContent {
+    flex: 1;
+    padding: 1.5rem;
+    overflow-y: auto;
+  }
+  
+  .pageHeader {
+    margin-bottom: 1.5rem;
+  }
+  
+  .pageTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+  }
+  
+  /* Tickets Table */
+  .ticketsContainer {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .ticketsTitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #2d3748;
+    margin-bottom: 1rem;
+  }
+  
+  .tableContainer {
+    overflow-x: auto;
+  }
+  
+  .ticketsTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tableHeader {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+    font-weight: 500;
+  }
+  
+  .tableRow {
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .tableRow:hover {
+    background-color: #f7fafc;
+  }
+  
+  .tableCell {
+    padding: 1rem;
+    color: #4a5568;
+  }
+  
+  .assigneeInfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .assigneeAvatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    background-color: #e2e8f0;
+    margin-right: 0.75rem;
+  }
+  
+  .statusBadge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .statusDone {
+    background-color: #4fd1c5;
+    color: #ffffff;
+  }
+  
+  .statusProgress {
+    background-color: #ecc94b;
+    color: #ffffff;
+  }
+  
+  .statusOnhold {
+    background-color: #63b3ed;
+    color: #ffffff;
+  }
+  
+  .statusRejected {
+    background-color: #f56565;
+    color: #ffffff;
+  }
+  

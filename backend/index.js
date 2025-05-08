@@ -16,3 +16,19 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+const mongoose = require('mongoose');
+
+const uri = 'mongodb+srv://chemical:chemical@cluster0.9ds0fh9.mongodb.net/Chemical?retryWrites=true&w=majority';
+
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => {
+  console.log('✅ Connected to MongoDB Atlas');
+})
+.catch((err) => {
+  console.error('❌ MongoDB connection error:', err);
+});
+

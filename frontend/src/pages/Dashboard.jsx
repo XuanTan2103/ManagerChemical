@@ -93,9 +93,6 @@ function Dashboard() {
           <div className={styles.pageHeader}>
             <h2 className={styles.pageTitle}>
               {activeMenu === 'dashboard' && 'Thống Kê Nhập Xuất Vật Tư'}
-              {activeMenu === 'products' && 'Quản lý sản phẩm'}
-              {activeMenu === 'report' && 'Báo cáo hư hỏng đồ dùng'}
-              {activeMenu === 'users' && 'Quản lý người dùng'}
             </h2>
           </div>
 
